@@ -26,7 +26,7 @@ int exponential(int n,int *arr,int key)
     int start,end;
     if(key==arr[0])
     return 0;
-    while(jump<=key)
+    while(arr[jump]<=key)
     {
         jump=pow(2,i);
         ind=jump;
@@ -43,6 +43,8 @@ int exponential(int n,int *arr,int key)
         }
     i++;
     }
+	return -1;
+	
 }
 int main()
 {
